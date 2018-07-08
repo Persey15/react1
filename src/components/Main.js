@@ -7,6 +7,8 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components';
 
+import Slider from './Slider'
+
 const Repair = styled.div`
 	color: #ffffff;
 	
@@ -44,7 +46,7 @@ class Main extends React.Component {
 	render(){
 		return (
 				<Row>
-					<Col lg={5} lgOffset={1}>
+					<Col lg={5} >
 						<Repair>
 						Качественный ремонт
 					<span>iphone за 35 минут и гарантия 1 год</span>
@@ -55,8 +57,8 @@ class Main extends React.Component {
 						</LightText>
 						<CallBtn>Отправить заявку!</CallBtn>
 					</Col>
-					<Col lg={6} >
-						
+					<Col lg={6} lgOffset={1}>
+						<Slider />
 					</Col>
 				</Row>	
 			)
